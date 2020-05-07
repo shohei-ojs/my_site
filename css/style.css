@@ -74,7 +74,7 @@ hr {
    ========================================================================== */
 
 #headerwrap {
-  background: url(../img/header-bg.jpg) no-repeat center top;
+  background: url(../img/header_bg.jpg) no-repeat center top;
   margin-top: -10px;
   padding-top: 20px;
   text-align: center;
@@ -97,6 +97,7 @@ hr {
   color: white;
   font-size: 70px;
   font-weight: 700;
+  font-style: oblique;
 }
 
 #headerwrap h3 {
@@ -431,4 +432,19 @@ hr {
 
 .credits {
   color: #999;
+}
+
+/* about image */
+.sep {
+	background-attachment: fixed;
+	background-position: 50% 0;
+  background-repeat: no-repeat;
+  width: auto;
+	height: 320px;
+  position: relative;
+  background-color: black;
+  opacity: 0.85;
+}
+.about {
+	background-image: url(../img/about.jpg);
 }
