@@ -74,7 +74,7 @@ hr {
    ========================================================================== */
 
 #headerwrap {
-  background: url(../img/header_bg.jpg) no-repeat center top;
+  background: url(../img/header_bg-min.jpg) no-repeat center top;
   margin-top: -10px;
   padding-top: 20px;
   text-align: center;
@@ -446,5 +446,5 @@ hr {
   opacity: 0.85;
 }
 .about {
-	background-image: url(../img/about.jpg);
+	background-image: url(../img/about-min.jpg);
 }
