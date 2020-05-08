@@ -24,7 +24,7 @@ jQuery(document).ready(function( $ ) {
 		});
 		
 		// Init Stellar
-    $(window).stellar({
+    $.stellar({
       horizontalScrolling: false,
       verticalOffset: 40
     });
