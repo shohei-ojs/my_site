@@ -21,7 +21,12 @@ jQuery(document).ready(function( $ ) {
 	    }
 			$('body').toggleClass('body-push-toleft');
 			$('#theMenu').toggleClass('menu-open');
-	  });
-
+		});
+		
+		// Init Stellar
+    $.stellar({
+      horizontalScrolling: false,
+      verticalOffset: 40
+    });
 
 });
