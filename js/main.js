@@ -30,3 +30,27 @@ jQuery(document).ready(function( $ ) {
     });
 
 });
+
+var button = document.getElementsById("button");
+button.addEventListener("click", function(event){
+	event.preventDefault();
+
+	var name = document.getElementById("contact-name").value;
+	var email = document.getElementById("contact-email").value;
+	var subject = document.getElementById("contact-subject").value;
+	var message = document.getElementById("contact-message").value;
+
+	function sendmail(name, email, subject, message) {
+		return fetch('https://sapd0j6epg.execute-api.ap-northeast-1.amazonaws.com/prod', {
+			method: 'POST',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({name, email, subject, message})
+
+		})
+	}
+
+	sendmail(name, email, subject, message)
+});
